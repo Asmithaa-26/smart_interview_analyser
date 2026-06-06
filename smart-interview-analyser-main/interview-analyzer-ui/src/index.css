@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(135deg,#020617,#0f172a);
+  color:white;
+}
+
+/* dashboard cards */
+
+.dashboard-card{
+  @apply bg-white/10 backdrop-blur-md rounded-xl p-5 border border-white/10 transition-all duration-300 shadow-sm;
+}
+
+.dashboard-card:hover{
+  @apply bg-white/20 scale-[1.02] shadow-lg;
+}
+
+/* page headings */
+
+.page-title{
+  @apply text-3xl font-semibold tracking-tight mb-8;
+}
+
+.section-title{
+  @apply text-lg font-medium mb-3 text-gray-200;
+}
+
+/* buttons */
+
+.primary-btn{
+  @apply bg-blue-500 px-5 py-2 rounded-lg hover:bg-blue-600 transition;
+}
+
+.secondary-btn{
+  @apply bg-green-500 px-4 py-2 rounded-lg hover:bg-green-600 transition;
+}
+
+/* sidebar */
+
+.sidebar-link{
+  @apply block mb-4 text-gray-300 hover:text-blue-400 transition cursor-pointer;
+}
